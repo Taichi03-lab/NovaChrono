@@ -1,46 +1,349 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#090a0b">
-  <meta name="description" content="Learn about NovaChrono, our mission and vision, and the creative team behind our luxury watch brand concept.">
-  <title>About Us | NovaChrono</title><link rel="icon" href="assets/logo.svg" type="image/svg+xml"><link rel="stylesheet" href="css/style.css"><script src="js/app.js" defer></script>
-<style>
-/* Meet the Team: local, optimized photographs provided by the group. */
-.team-photo::before { display: none; }
-.team-photo img { width:100%; height:100%; object-fit:cover; object-position:center 30%; display:block; transition:transform .45s ease; }
-.team-card { transition:transform .3s ease, border-color .3s ease, box-shadow .3s ease; }
-.team-card:hover { transform:translateY(-5px); border-color:rgba(217,177,103,.62); box-shadow:0 14px 40px rgba(0,0,0,.2); }
-.team-card:hover .team-photo img { transform:scale(1.055); }
-.team-card h3 { font-size:clamp(14px,1.45vw,18px); line-height:1.4; min-height:79px; display:grid; place-items:center; }
-@media (max-width:760px) { .team-card h3 { font-size:14px; min-height:86px; padding:12px 6px; } }
-@media (prefers-reduced-motion:reduce) { .team-card, .team-photo img { transition:none; } }
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#090a0b">
+
+    <meta name="description"
+        content="Learn about NovaChrono, our mission, vision, and the team behind our watch brand.">
+
+    <title>About Us | NovaChrono</title>
+
+    <link rel="icon" href="assets/logo.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/app.js" defer></script>
+
+    <style>
+        /* MEET THE TEAM */
+
+        .team-photo::before {
+            display: none;
+        }
+
+        .team-photo img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center 30%;
+            display: block;
+            transition: transform 0.45s ease;
+        }
+
+        .team-card {
+            transition: transform 0.3s ease,
+                border-color 0.3s ease,
+                box-shadow 0.3s ease;
+        }
+
+        .team-card:hover {
+            transform: translateY(-5px);
+            border-color: rgba(217, 177, 103, 0.62);
+            box-shadow: 0 14px 40px rgba(0, 0, 0, 0.2);
+        }
+
+        .team-card:hover .team-photo img {
+            transform: scale(1.055);
+        }
+
+        .team-card h3 {
+            font-size: clamp(14px, 1.45vw, 18px);
+            line-height: 1.4;
+            min-height: 79px;
+            display: grid;
+            place-items: center;
+        }
+
+        @media (max-width: 760px) {
+            .team-card h3 {
+                font-size: 14px;
+                min-height: 86px;
+                padding: 12px 6px;
+            }
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            .team-card,
+            .team-photo img {
+                transition: none;
+            }
+        }
+    </style>
 </head>
+
 <body data-page="about">
-<header id="site-header" class="site-header"></header>
-<main>
-  <section class="page-hero"><div class="container"><div class="breadcrumb"><a href="index.html">HOME</a> / ABOUT US</div><span class="eyebrow">The story behind the brand</span><h1>About Nova<span class="text-gold">Chrono</span></h1><p>Inspired by time. Guided by design. Created to make every moment memorable.</p></div></section>
-  <section class="section container"><div class="about-feature">
-    <div class="feature-image reveal"><img src="assets/watches/eclipse.svg" alt="NovaChrono Eclipse watch illustration"></div>
-    <div class="feature-copy reveal"><span class="eyebrow">Who we are</span><h2>Every Great Story<br><span class="text-gold">Starts with Time.</span></h2><div class="divider"></div><p>NovaChrono is a student-created watch business concept that celebrates individuality, quality-inspired design, and the value of every passing moment.</p><p>The name combines <strong style="color:var(--ivory)">Nova</strong>, representing something new, and <strong style="color:var(--ivory)">Chrono</strong>, representing time. Together, they express our vision of a fresh perspective on timeless style.</p><p>Our collections bring together luxury, classic, minimalist, and sport designs so every personality can find its perfect match.</p></div>
-  </div></section>
-  <section class="section" style="background:#101112;border-block:1px solid var(--white-line)"><div class="container"><div class="section-heading reveal"><span class="eyebrow">What drives us</span><h2 class="section-title">Our Purpose</h2><div class="divider centered"></div></div>
-    <div class="values-grid reveal"><article class="value-card"><div class="value-icon">01.</div><h3>Our Mission</h3><p>To offer thoughtfully designed watch concepts that combine personal style, everyday practicality, and an appreciation for every moment.</p></article><article class="value-card"><div class="value-icon">02.</div><h3>Our Vision</h3><p>To become a recognizable watch brand concept known for modern elegance, creativity, and meaningful connections with customers.</p></article><article class="value-card"><div class="value-icon">03.</div><h3>Our Values</h3><p>Creativity, integrity, customer focus, and attention to detail guide the way we design each collection and present our brand.</p></article></div>
-  </div></section>
-  <section class="section container" id="team"><div class="section-heading reveal"><span class="eyebrow">The people behind NovaChrono</span><h2 class="section-title">Meet the Team</h2><div class="divider centered"></div><p class="section-description">Eight creative minds bringing the NovaChrono concept to life.</p></div>
-    <div class="team-grid reveal">
-      <article class="team-card"><div class="team-photo"><img src="assets/team/Delmarc%20M.%20Gonito.jpg" alt="Portrait of Delmarc M. Gonito" loading="lazy" decoding="async"></div><h3>Delmarc M. Gonito</h3></article>
-      <article class="team-card"><div class="team-photo"><img src="assets/team/Evanna%20Reine%20B.%20Luistro.jpg" alt="Portrait of Evanna Reine B. Luistro" loading="lazy" decoding="async"></div><h3>Evanna Reine B. Luistro</h3></article>
-      <article class="team-card"><div class="team-photo"><img src="assets/team/John%20Carlo%20A.%20Gayoso.jpg" alt="Portrait of John Carlo A. Gayoso" loading="lazy" decoding="async"></div><h3>John Carlo A. Gayoso</h3></article>
-      <article class="team-card"><div class="team-photo"><img src="assets/team/Lorence%20Andrie%20Lumanglas.jpg" alt="Portrait of Lorence Andrie Lumanglas" loading="lazy" decoding="async"></div><h3>Lorence Andrie Lumanglas</h3></article>
-      <article class="team-card"><div class="team-photo"><img src="assets/team/Aaron%20Bersoto%20Macalindol.jpg" alt="Portrait of Aaron Bersoto Macalindol" loading="lazy" decoding="async"></div><h3>Aaron Bersoto Macalindol</h3></article>
-      <article class="team-card"><div class="team-photo"><img src="assets/team/Charise%20Comia%20Leyesa.jpg" alt="Portrait of Charise Comia Leyesa" loading="lazy" decoding="async"></div><h3>Charise Comia Leyesa</h3></article>
-      <article class="team-card"><div class="team-photo"><img src="assets/team/Clyde%20Laylay.jpg" alt="Portrait of Clyde Laylay" loading="lazy" decoding="async"></div><h3>Clyde Laylay</h3></article>
-      <article class="team-card"><div class="team-photo"><img src="assets/team/Lumpas%2C%20Christopher%20Nayr%2C%20V.png" alt="Portrait of Christopher Nayr V. Lumpas" loading="lazy" decoding="async"></div><h3>Christopher Nayr V. Lumpas</h3></article>
-    </div>
-  </section>
-  <section class="banner"><div class="container reveal"><span class="eyebrow">Discover our creations</span><h2>Designed Around You.</h2><p>Explore a world of original timepieces across four signature collections.</p><a class="btn btn-primary" href="products.html">Explore Our Watches <span>→</span></a></div></section>
-</main>
-<footer id="site-footer" class="site-footer"></footer>
+
+    <!-- HEADER -->
+    <header id="site-header" class="site-header"></header>
+
+    <main>
+
+        <!-- ABOUT US HERO -->
+        <section class="page-hero">
+            <div class="container">
+
+                <div class="breadcrumb">
+                    <a href="index.html">HOME</a> / ABOUT US
+                </div>
+
+                <span class="eyebrow">
+                    The story behind the brand
+                </span>
+
+                <h1>
+                    About Nova<span class="text-gold">Chrono</span>
+                </h1>
+
+                <p>
+                    Inspired by time. Guided by design.
+                    Created to make every moment memorable.
+                </p>
+
+            </div>
+        </section>
+
+        <!-- WHO WE ARE -->
+        <section class="section container">
+            <div class="about-feature">
+
+                <div class="feature-image reveal">
+                    <img
+                        src="assets/watches/eclipse.svg"
+                        alt="NovaChrono Eclipse Watch">
+                </div>
+
+                <div class="feature-copy reveal">
+
+                    <span class="eyebrow">Who we are</span>
+
+                    <h2>
+                        Every Great Story<br>
+                        <span class="text-gold">
+                            Starts with Time.
+                        </span>
+                    </h2>
+
+                    <div class="divider"></div>
+
+                    <p>
+                        NovaChrono is a student-created watch business
+                        concept that celebrates individuality,
+                        quality-inspired design, and the value of
+                        every passing moment.
+                    </p>
+
+                    <p>
+                        The name combines
+                        <strong style="color:var(--ivory)">Nova</strong>,
+                        representing something new, and
+                        <strong style="color:var(--ivory)">Chrono</strong>,
+                        representing time.
+                    </p>
+
+                    <p>
+                        Our collections bring together luxury,
+                        classic, minimalist, and sport designs
+                        so every personality can find its
+                        perfect match.
+                    </p>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- MISSION AND VISION -->
+        <section class="section"
+            style="background:#101112; border-block:1px solid var(--white-line);">
+
+            <div class="container">
+
+                <div class="section-heading reveal">
+                    <span class="eyebrow">What drives us</span>
+                    <h2 class="section-title">Our Purpose</h2>
+                    <div class="divider centered"></div>
+                </div>
+
+                <div class="values-grid reveal">
+
+                    <article class="value-card">
+                        <div class="value-icon">01.</div>
+                        <h3>Our Mission</h3>
+                        <p>
+                            To offer thoughtfully designed watch
+                            concepts that combine personal style,
+                            everyday practicality, and an
+                            appreciation for every moment.
+                        </p>
+                    </article>
+
+                    <article class="value-card">
+                        <div class="value-icon">02.</div>
+                        <h3>Our Vision</h3>
+                        <p>
+                            To become a recognizable watch brand
+                            concept known for modern elegance,
+                            creativity, and meaningful
+                            connections with customers.
+                        </p>
+                    </article>
+
+                    <article class="value-card">
+                        <div class="value-icon">03.</div>
+                        <h3>Our Values</h3>
+                        <p>
+                            Creativity, integrity, customer focus,
+                            and attention to detail guide the way
+                            we design each collection.
+                        </p>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- MEET THE TEAM -->
+        <section class="section container" id="team">
+
+            <div class="section-heading reveal">
+
+                <span class="eyebrow">
+                    The people behind NovaChrono
+                </span>
+
+                <h2 class="section-title">
+                    Meet the Team
+                </h2>
+
+                <div class="divider centered"></div>
+
+                <p class="section-description">
+                    Eight creative minds bringing the
+                    NovaChrono concept to life.
+                </p>
+
+            </div>
+
+            <div class="team-grid reveal">
+
+                <!-- MEMBER 1 -->
+                <article class="team-card">
+                    <div class="team-photo">
+                        <img
+                            src="assets/team/Delmarc%20M.%20Gonito.jpg"
+                            alt="Delmarc M. Gonito"
+                            loading="lazy">
+                    </div>
+                    <h3>Delmarc M. Gonito</h3>
+                </article>
+
+                <!-- MEMBER 2 -->
+                <article class="team-card">
+                    <div class="team-photo">
+                        <img
+                            src="assets/team/Evanna%20Reine%20B.%20Luistro.jpg"
+                            alt="Evanna Reine B. Luistro"
+                            loading="lazy">
+                    </div>
+                    <h3>Evanna Reine B. Luistro</h3>
+                </article>
+
+                <!-- MEMBER 3 -->
+                <article class="team-card">
+                    <div class="team-photo">
+                        <img
+                            src="assets/team/John%20Carlo%20A.%20Gayoso.jpg"
+                            alt="John Carlo A. Gayoso"
+                            loading="lazy">
+                    </div>
+                    <h3>John Carlo A. Gayoso</h3>
+                </article>
+
+                <!-- MEMBER 4 -->
+                <article class="team-card">
+                    <div class="team-photo">
+                        <img
+                            src="assets/team/Lorence%20Andrie%20Lumanglas.jpg"
+                            alt="Lorence Andrie Lumanglas"
+                            loading="lazy">
+                    </div>
+                    <h3>Lorence Andrie Lumanglas</h3>
+                </article>
+
+                <!-- MEMBER 5 -->
+                <article class="team-card">
+                    <div class="team-photo">
+                        <img
+                            src="assets/team/Aaron%20Bersoto%20Macalindol.jpg"
+                            alt="Aaron Bersoto Macalindol"
+                            loading="lazy">
+                    </div>
+                    <h3>Aaron Bersoto Macalindol</h3>
+                </article>
+
+                <!-- MEMBER 6 -->
+                <article class="team-card">
+                    <div class="team-photo">
+                        <img
+                            src="assets/team/Charise%20Comia%20Leyesa.jpg"
+                            alt="Charise Comia Leyesa"
+                            loading="lazy">
+                    </div>
+                    <h3>Charise Comia Leyesa</h3>
+                </article>
+
+                <!-- MEMBER 7 -->
+                <article class="team-card">
+                    <div class="team-photo">
+                        <img
+                            src="assets/team/Clyde%20Laylay.jpg"
+                            alt="Clyde Laylay"
+                            loading="lazy">
+                    </div>
+                    <h3>Clyde Laylay</h3>
+                </article>
+
+                <!-- MEMBER 8 -->
+                <article class="team-card">
+                    <div class="team-photo">
+                        <img
+                            src="assets/team/Lumpas%2C%20Christopher%20Nayr%2C%20V.png"
+                            alt="Christopher Nayr V. Lumpas"
+                            loading="lazy">
+                    </div>
+                    <h3>Christopher Nayr V. Lumpas</h3>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- BOTTOM BANNER -->
+        <section class="banner">
+            <div class="container reveal">
+
+                <span class="eyebrow">
+                    Discover our creations
+                </span>
+
+                <h2>Designed Around You.</h2>
+
+                <p>
+                    Explore a world of original timepieces
+                    across four signature collections.
+                </p>
+
+                <a class="btn btn-primary" href="products.html">
+                    Explore Our Watches
+                    <span>→</span>
+                </a>
+
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer id="site-footer" class="site-footer"></footer>
+
 </body>
 </html>
