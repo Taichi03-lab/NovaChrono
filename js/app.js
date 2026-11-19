@@ -1141,8 +1141,6 @@ function openCheckout() {
 
             <p>
                 Complete your order details below.
-                Use sample information; no orders are sent
-                or payments collected.
             </p>
 
             <form id="checkout-form" autocomplete="off">
